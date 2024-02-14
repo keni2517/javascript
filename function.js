@@ -25,3 +25,22 @@ let y = (function add(a , b){
 console.log(y);
 
 
+//arrow 
+
+
+let x = (a , b ,c)  => a*b+c;
+
+console.log(x(47,85,8));
+
+
+let z = (a , b ,c)  => {
+    return a+b*c;
+}
+
+console.log(z(47,85,8));
+
+
+//constructor
+
+const m = new Function("a", "b", "return a / b");
+console.log(m(9 , 3));
