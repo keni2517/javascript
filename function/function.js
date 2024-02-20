@@ -59,14 +59,12 @@ console.log(text);
 //function rest parameters
 
 function sum(...args) {
-    let sum = 0;
-for (let i=0 ; i<=arguments.length ; i++) 
-                sum += args[i];
-return sum;
+    let s = 0;
+for (let i=0 ; i<args.length ; i++) 
+                s += args[i];
+return s;
 }
-
-let r = sum(4, 9); 
-console.log(r);
+console.log(sum(1,2,3,4,5,6));
 
 
 //Generator Function
@@ -94,4 +92,4 @@ const person = {
         }
 };  
 
-console.log(person);
+console.log(person.fullName);
