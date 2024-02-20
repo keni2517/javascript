@@ -44,3 +44,54 @@ console.log(z(47,85,8));
 
 const m = new Function("a", "b", "return a / b");
 console.log(m(9 , 3));
+
+
+//function are object
+
+function myFunction(a, b,c,d,e,f,g,h) {
+    return arguments.length; 
+}
+
+let text = myFunction(4,7,8,7,4,5,9,2);
+console.log(text);
+
+
+//function rest parameters
+
+function sum(...args) {
+    let sum = 0;
+for (let i=0 ; i<=arguments.length ; i++) 
+                sum += args[i];
+return sum;
+}
+
+let r = sum(4, 9); 
+console.log(r);
+
+
+//Generator Function
+
+function* generate() {
+    yield 1;
+    yield 2;
+    return 3;
+}  
+
+let generator = generate();
+console.log(generator.next().value);
+console.log(generator.next().value); 
+console.log(generator.next().value); 
+
+
+//this keyword
+
+const person = {
+    firstName: "keni",
+    lastName: "kakadiya",
+    id:2517,
+    fullName : function() {
+                    return this.firstName + this.lastName;
+        }
+};  
+
+console.log(person);
