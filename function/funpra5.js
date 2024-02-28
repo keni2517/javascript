@@ -8,11 +8,10 @@ let perfect = (a) =>{
             n = n + i;
         }
     }
-    console.log(n);
     if(a == n){
         console.log("number is perfact");
     }else{
         console.log("number is not perfact");
     }
 }
-perfect(8);
+perfect(6);
