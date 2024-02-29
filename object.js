@@ -26,3 +26,7 @@ person.hobies = ['reading', 'dancing', 'music'];
 console.log(person["hobies"]["1"]);
 //console.log(person["address"]["city"]);
 
+delete person.firstname;
+console.log(person);
+
+
