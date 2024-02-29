@@ -8,6 +8,12 @@ let person={
 //console.log(person.firstname);
 //console.log(person["lastname"]);
 
+person.gender={
+    gender1:"male",
+    gender2 : "female"
+}
+console.log(person);
+
 person.address = {
     line : "208,city center",
     city:"surat",
