@@ -15,8 +15,8 @@ person.address = {
 }
 //console.log(person);
 
-person.hobies = ["reading, dancing, music"]
+person.hobies = ['reading', 'dancing', 'music'];
 //console.log(person);
-console.log(person["hobies"]);
+console.log(person["hobies"]["1"]);
 //console.log(person["address"]["city"]);
 
